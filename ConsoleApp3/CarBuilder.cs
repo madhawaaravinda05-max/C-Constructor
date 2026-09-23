@@ -8,40 +8,48 @@ namespace ConsoleApp3
 {
     public class CarBuilder
     {
-        private Car car;
-        public CarBuilder()
-        {
-            car = new Car();   
-        }
-        public CarBuilder SetId(int id)
-        {
-            car.id = id;
-            return this;
-        }
-        public CarBuilder SetName(string name)
-        {
-            car.name = name;
-            return this;
-        }
-        public CarBuilder SetColor(string color)
-        {
-            car.color = color;
-            return this;
-        }
-        public CarBuilder SetPublish(string publish)
-        {
-            car.publish = publish;
-            return this;
-        }
-        public CarBuilder SetHorsePower(string HorsePower)
-        {
-            car.HorsePower = HorsePower;
-            return this;
-        }
+        //private Car car;
+        //public CarBuilder()
+        //{
+        //    car = new Car();   
+        //}
+        //public CarBuilder SetId(int id)
+        //{
+        //    car.id = id;
+        //    return this;
+        //}
+        //public CarBuilder SetName(string name)
+        //{
+        //    car.name = name;
+        //    return this;
+        //}
+        //public CarBuilder SetColor(string color)
+        //{
+        //    car.color = color;
+        //    return this;
+        //}
+        //public CarBuilder SetPublish(string publish)
+        //{
+        //    car.publish = publish;
+        //    return this;
+        //}
+        //public CarBuilder SetHorsePower(string HorsePower)
+        //{
+        //    car.HorsePower = HorsePower;
+        //    return this;
+        //}
 
-        public Car Build()
-        {
-            return car;
-        }
+        //public Car Build()
+        //{
+        //    return car;
+        //}
+
+        CarBuilder SetId(int id)
+        CarBuilder SetName(string name)
+        CarBuilder SetColor(string color)
+        CarBuilder SetPublish(string publish)
+        CarBuilder SetHorsePower(string HorsePower)
+
+        Car Build()
     }
 }
