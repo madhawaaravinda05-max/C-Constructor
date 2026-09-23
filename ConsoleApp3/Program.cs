@@ -13,13 +13,23 @@ namespace ConsoleApp3
             //Car x1 = new Car(1001, "BMW M1", "Black", "BMW", "500");
             //x1.Display();
 
-            Car x1 = new CarBuilder()
+            /* Car x1 = new CarBuilder()
+                 .SetId(1001)
+                 .SetName("BMW M1")
+                 .SetColor("Black")
+                 .SetPublish("BMW")
+                 .SetHorsePower("500");
+             x1.Display();*/
+
+            CarBuilder builder = new GassoleenCarBuilder();
+            Car x1 = builder
                 .SetId(1001)
                 .SetName("BMW M1")
                 .SetColor("Black")
                 .SetPublish("BMW")
-                .SetHorsePower("500");
-            x1.Display();
+                .SetHorsePower("500")
+                .Build();
+
         }
     }
 }
