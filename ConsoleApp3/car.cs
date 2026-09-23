@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp3
 {
-    public class car
+    public class Car
     {
         public int id { get; set; }
         public string name { get; set; }
@@ -14,7 +14,9 @@ namespace ConsoleApp3
         public string publish {  get; set; }
         public string HorsePower { get; set; }
 
-        public car (int id,string name,string color,string publish,string HorsePower)
+        public Car() {}
+
+        public Car (int id,string name,string color,string publish,string HorsePower)
         {
             this.id = id;
             this.name = name;

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +10,15 @@ namespace ConsoleApp3
     {
         static void Main(string[] args)
         {
-            car x1 = new car(1001, "BMW M1", "Black", "BMW", "500");
+            //Car x1 = new Car(1001, "BMW M1", "Black", "BMW", "500");
+            //x1.Display();
+
+            Car x1 = new CarBuilder()
+                .SetId(1001)
+                .SetName("BMW M1")
+                .SetColor("Black")
+                .SetPublish("BMW")
+                .SetHorsePower("500");
             x1.Display();
         }
     }
